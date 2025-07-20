@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Untuk Aura 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="centered">
+  <div class="card">
+    <h2>🎮 Tebak Siapa yang Aku Sayang?</h2>
+    <input type="text" id="namaInput" placeholder="Tulis namanya di sini..."/>
+    <button onclick="cekNama()">Cek</button>
+    <p id="pesan"></p>
+  </div>
+
+  <script>
+    function cekNama() {
+      const input = document.getElementById("namaInput").value.toLowerCase();
+      if (input.includes("aura")) {
+        window.location.href = "surat.html";
+      } else {
+        document.getElementById("pesan").innerText = "Hmm... Coba pikir lagi ❤️";
+      }
+    }
+  </script>
+</body>
+</html>
